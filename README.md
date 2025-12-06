@@ -1,4 +1,4 @@
-![PuneRides Banner](src/assets/punerides_banner.png)
+![PuneRides Banner](src/assets/punerides_banner1.png)
 
 # PuneRides - Premium Bike Rental Service 🛵
 
