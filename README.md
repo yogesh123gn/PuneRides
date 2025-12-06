@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# PuneRides - Premium Bike Rental Service 🛵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PuneRides is a modern, responsive web application designed to simplify the bike rental experience in Pune. Whether you need a scooter for daily commutes or a cruiser for a weekend getaway, PuneRides offers a seamless platform to browse and book premium two-wheelers.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Modern & Responsive UI**: Built with React and Tailwind CSS, featuring a clean, "tech-mesh" aesthetic that looks great on all devices.
+*   **Interactive Infographics**: A dedicated "Smart Mobility" section powered by **Recharts** and **Framer Motion**, visualizing the cost and environmental benefits of renting vs. owning.
+*   **Dynamic Theme**: Fully supported **Dark Mode** that respects user preference and toggles seamlessly.
+*   **Smooth Animations**: Engaging entry animations and micro-interactions for a polished user experience.
+*   **Optimized Typography**: features a professional font stack (`sohne-var`, `Helvetica Neue`, `Arial`) for varying screen sizes.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend Framework**: [React](https://reactjs.org/) (via Vite)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+*   **Charts**: [Recharts](https://recharts.org/)
+*   **Routing**: [React Router](https://reactrouter.com/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to set up the project locally on your machine.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+*   Node.js (v14 or higher)
+*   npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yogesh123gn/PuneRides.git
+    cd PuneRides
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Navigate to `http://localhost:5173` to view the app.
+
+## 📂 Project Structure
+
+```
+src/
+├── components/      # Reusable UI components (Navbar, Hero, Infographics)
+├── pages/           # Page layouts (Home, Requirements)
+├── hooks/           # Custom hooks (useTheme)
+├── assets/          # Static assets (images, icons)
+├── data/            # Mock data (bike listings)
+└── main.tsx         # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤝 Contributing
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contributions are welcome! If you have suggestions or want to improve the codebase, feel free to fork the repo and submit a Pull Request.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+*Built with ❤️ for the riders of Pune.*
