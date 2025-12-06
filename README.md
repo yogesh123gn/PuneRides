@@ -1,3 +1,5 @@
+![PuneRides Banner](src/assets/punerides_banner.png)
+
 # PuneRides - Premium Bike Rental Service 🛵
 
 PuneRides is a modern, responsive web application designed to simplify the bike rental experience in Pune. Whether you need a scooter for daily commutes or a cruiser for a weekend getaway, PuneRides offers a seamless platform to browse and book premium two-wheelers.
