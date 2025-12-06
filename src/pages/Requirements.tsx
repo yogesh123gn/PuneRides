@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FileCheck, ShieldCheck, Clock, IndianRupee, BadgeCheck, AlertCircle } from 'lucide-react';
